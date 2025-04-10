@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EX1</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <a href="/">Link to Start Page</a>
+</head>
+
+<body>
+  <h2>Bradley's Form</h2>
+  <form>
+    <p>
+      <label for="name">Name</label>:
+      <input type="text" name="name" id="name" required>
+    </p>
+    <p>
+      <label for="email">Email</label>:
+      <input type="text" name="email" id="email" required>
+    </p>
+    <div>Payment Type:</div>
+    <p>
+      <input type="radio" name="payment" id="cash" value="CASH" checked>
+      <label for="cash">Cash</label>
+      <br>
+      <input type="radio" name="payment" id="credit card" value="CC">
+      <label for="credit card">Credit Card</label>
+      <br>
+      <input type="radio" name="payment" id="google pay" value="GGP">
+      <label for="google pay">Google Pay</label>
+      <br>
+      <input type="radio" name="payment" id="apple pay" value="AP">
+      <label for="apple pay">Apple Pay</label>
+      <br>
+    </p>
+    <input type="checkbox" id="promo" name="promo" checked />
+    <label for="promo">Sign me up for special promotions</label>
+    <br>
+    <label for="location">Preferred Location</label>:
+    <select name="location" id="location">
+    </select>
+    <br>
+    <input type="submit" value="Submit">
+    <input type="button" value="Cancel" id="cancel">
+  </form>
+
+  <div id="result"></div>
+
+  <script src="/ex1.js"></script>
+
+</body>
+
+</html>
